@@ -71,7 +71,7 @@ input {
     width: 95%;
     height: 25px;
 }
-
+/* How do I get the text within this input box to start at the top left of the box??? */
 #content {
     height: 100px;
     margin-top: 5px;
