@@ -15,7 +15,7 @@ function addBlogPost() {
     pEl.textContent = newBlogPost.content;
 
     let h4El = document.createElement(`h4`);
-    h4El.textContent = newBlogPost.user;
+    h4El.textContent = `Posted by: ` + newBlogPost.user;
 
     blogEl.classList.add("post");
 
