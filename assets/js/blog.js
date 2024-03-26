@@ -19,9 +19,9 @@ function addBlogPost() {
 
     blogEl.classList.add("post");
 
-    blogEl.appendChild(h3El)
-    blogEl.appendChild(pEl)
-    blogEl.appendChild(h4El)
+    blogEl.appendChild(h3El);
+    blogEl.appendChild(pEl);
+    blogEl.appendChild(h4El);
 
  
     blogContainer.appendChild(blogEl);
