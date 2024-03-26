@@ -15,18 +15,22 @@
     </aside>
     <main>
       <div id="inputs-container">
-        <h1>What's on your mind?</h1>
-        <div>
-        <label for="user">Username</label>
-          <input id="user" name="user">
-        </div>
-        <div>
-        <label for="title">Title</label>
-          <input id="title" name="title">
-        </div>
-        <div>
-        <label for="content">Content</label>
-          <input id="content" name="content">
+        <form>
+          <h1>What's on your mind?</h1>
+          <div>
+            <label for="user">Username</label>
+            <input id="user" type="text" name="user" />
+          </div>
+          <div>
+            <label for="title">Title</label>
+            <input id="title" type="text" name="title" />
+          </div>
+          <div>
+            <label for="content">Content</label>
+            <input id="content" type="text" name="content" />
+          </div>
+          <input type="submit" id="submit-button">
+        </form>
       </div>
     </main>
     <script src="./assets/js/form.js"></script>
