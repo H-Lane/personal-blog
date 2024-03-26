@@ -30,17 +30,12 @@ submitEl.addEventListener(`click`, function (event) {
   contentEl.value = "";
 
   window.location.href = `./blog.html`
-
-  //TODO: Add in a redirect to the blog.html page and find a way to automatically make the blogPost object populate into a created div on that new page
 });
 
 function errorMessage() {
   alert("Please complete all empty forms before submitting.");
   
-  // if (alert) {
-  //   return
-  // }
-}
+};
 
 // let userValue = localStorage.getItem(userText);
 // let titleValue = localStorage.getItem(titleText);

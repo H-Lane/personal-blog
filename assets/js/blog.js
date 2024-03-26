@@ -1,7 +1,7 @@
 const blogContainer = document.querySelector(`#container`);
 
 addBlogPost()
-// add class of post to the div when done. Use h3 for title, p for content, and h4 for author
+
 
 function addBlogPost() {
     const blogEl = document.createElement(`div`);
@@ -25,5 +25,7 @@ function addBlogPost() {
 
  
     blogContainer.appendChild(blogEl);
+
+    localStorage.clear();
 
 }
