@@ -15,13 +15,12 @@ submitEl.addEventListener(`click`, function (event) {
   localStorage.setItem(`blogPost`, JSON.stringify(blogPost));
 
 
-// const newBlogPost = JSON.parse(localStorage.getItem('blogPost'));
-
   userEl.value = ("")
   titleEl.value = ("")
   contentEl.value = ("")
 
-
+  
+//TODO: Add in a redirect to the blog.html page and find a way to automatically make the blogPost object populate into a created div on that new page
 })
 
 
