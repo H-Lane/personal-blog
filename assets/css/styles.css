@@ -55,5 +55,16 @@ main h1 {
 }
 
 #inputs {
-    padding-left: 20px; 
+    padding-left: 50px; 
+    display: inline-block;
+}
+
+label {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
 }
