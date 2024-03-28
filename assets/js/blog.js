@@ -6,26 +6,48 @@ addBlogPost()
 function addBlogPost() {
     const blogEl = document.createElement(`div`);
 
-    const newBlogPost = JSON.parse(localStorage.getItem('blogPost'));
+    const newBlogPost = JSON.parse(localStorage.getItem(`blogArray`));
+    console.log(newBlogPost)
 
-    let h3El = document.createElement(`h3`);
-    h3El.textContent = newBlogPost.title;
+    
+    newBlogPost.forEach(function(element){
 
-    let pEl = document.createElement(`p`);
-    pEl.textContent = newBlogPost.content;
+        let h3El = document.createElement(`h3`);
+        h3El.textContent = element.title;
+    
+        let pEl = document.createElement(`p`);
+        pEl.textContent = element.content;
+    
+        let h4El = document.createElement(`h4`);
+        h4El.textContent = `Posted by: ` + element.user;
+    
+        blogEl.classList.add("post");
+    
+        blogEl.appendChild(h3El);
+        blogEl.appendChild(pEl);
+        blogEl.appendChild(h4El);
+    
+     
+        blogContainer.appendChild(blogEl);
+    });
 
-    let h4El = document.createElement(`h4`);
-    h4El.textContent = `Posted by: ` + newBlogPost.user;
+    // let h3El = document.createElement(`h3`);
+    // h3El.textContent = newBlogPost.title;
 
-    blogEl.classList.add("post");
+    // let pEl = document.createElement(`p`);
+    // pEl.textContent = newBlogPost.content;
 
-    blogEl.appendChild(h3El);
-    blogEl.appendChild(pEl);
-    blogEl.appendChild(h4El);
+    // let h4El = document.createElement(`h4`);
+    // h4El.textContent = `Posted by: ` + newBlogPost.user;
+
+    // blogEl.classList.add("post");
+
+    // blogEl.appendChild(h3El);
+    // blogEl.appendChild(pEl);
+    // blogEl.appendChild(h4El);
 
  
-    blogContainer.appendChild(blogEl);
+    // blogContainer.appendChild(blogEl);
 
-    localStorage.clear();
 
 }

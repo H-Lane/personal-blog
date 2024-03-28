@@ -3,6 +3,7 @@ const titleEl = document.getElementById(`title`);
 const contentEl = document.getElementById(`content`);
 const submitEl = document.getElementById(`submit-button`);
 
+
 submitEl.addEventListener(`click`, function (event) {
   event.preventDefault();
 
@@ -22,14 +23,20 @@ submitEl.addEventListener(`click`, function (event) {
     title: titleEl.value,
     content: contentEl.value.trim(),
   };
+  
+  const blogArray = JSON.parse(localStorage.getItem(`blogArray`)) || [];
 
-  localStorage.setItem(`blogPost`, JSON.stringify(blogPost));
+
+  blogArray.push(blogPost);
+
+
+  localStorage.setItem(`blogArray`, JSON.stringify(blogArray));
 
   userEl.value = "";
   titleEl.value = "";
   contentEl.value = "";
 
-  window.location.href = `./blog.html`
+  window.location.href = `./blog.html`;
 });
 
 function errorMessage() {
