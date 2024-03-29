@@ -23,7 +23,7 @@ The CSS can be found at [./assets/css/styles.css](assets/css/styles.css) and at 
 
 ## Usage
 
-The live deployment of this project can be found at [https://h-lane.github.io/payroll-tracker/](https://h-lane.github.io/payroll-tracker/)
+The live deployment of this project can be found at *Waiting for Github Pages*
 
 ![alt text](./assets/Form.PNG)
 ![alt text](./assets/Blog.PNG)
