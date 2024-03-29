@@ -7,12 +7,10 @@ const bigContainer = document.querySelector('.big-container');
 let mode = 'dark';
 
 themeSwitcher.addEventListener('click', function () {
-  // If mode is dark, apply light background
   if (mode === 'dark') {
     mode = 'light';
     bigContainer.setAttribute('class', 'light');
   }
-  // If mode is light, apply dark background
   else {
     mode = 'dark';
     bigContainer.setAttribute('class', 'dark');

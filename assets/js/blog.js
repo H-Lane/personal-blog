@@ -19,7 +19,7 @@ themeSwitcher.addEventListener('click', function () {
 
 
 function addBlogPost() {
-    const blogEl = document.createElement(`div`);
+    const blogEl = document.createElement(`section`);
 
     const newBlogPost = JSON.parse(localStorage.getItem(`blogArray`));
 
