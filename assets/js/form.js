@@ -2,7 +2,22 @@ const userEl = document.getElementById(`user`);
 const titleEl = document.getElementById(`title`);
 const contentEl = document.getElementById(`content`);
 const submitEl = document.getElementById(`submit-button`);
+const themeSwitcher = document.querySelector('#theme-switcher');
+const bigContainer = document.querySelector('.big-container');
+let mode = 'dark';
 
+themeSwitcher.addEventListener('click', function () {
+  // If mode is dark, apply light background
+  if (mode === 'dark') {
+    mode = 'light';
+    bigContainer.setAttribute('class', 'light');
+  }
+  // If mode is light, apply dark background
+  else {
+    mode = 'dark';
+    bigContainer.setAttribute('class', 'dark');
+  }
+});
 
 submitEl.addEventListener(`click`, function (event) {
   event.preventDefault();

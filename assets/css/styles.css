@@ -2,6 +2,19 @@ body {
     display: flex;
 }
 
+.light {
+    background-color: white;
+    color: black;
+    height: 100vh;
+  }
+  
+  .dark {
+    background-color: #243447;
+    height: 100vh;
+    color: #bebebe;
+  }
+
+
 header {
     display: block;
     position: fixed;
