@@ -5,12 +5,11 @@ let mode = 'dark';
 addBlogPost()
 
 themeSwitcher.addEventListener('click', function () {
-    // If mode is dark, apply light background
+
     if (mode === 'dark') {
       mode = 'light';
       bigContainer.setAttribute('class', 'light');
     }
-    // If mode is light, apply dark background
     else {
       mode = 'dark';
       bigContainer.setAttribute('class', 'dark');
@@ -23,7 +22,6 @@ function addBlogPost() {
     const blogEl = document.createElement(`div`);
 
     const newBlogPost = JSON.parse(localStorage.getItem(`blogArray`));
-    console.log(newBlogPost)
 
     
     newBlogPost.forEach(function(element){
@@ -46,24 +44,4 @@ function addBlogPost() {
      
         blogContainer.appendChild(blogEl);
     });
-
-    // let h3El = document.createElement(`h3`);
-    // h3El.textContent = newBlogPost.title;
-
-    // let pEl = document.createElement(`p`);
-    // pEl.textContent = newBlogPost.content;
-
-    // let h4El = document.createElement(`h4`);
-    // h4El.textContent = `Posted by: ` + newBlogPost.user;
-
-    // blogEl.classList.add("post");
-
-    // blogEl.appendChild(h3El);
-    // blogEl.appendChild(pEl);
-    // blogEl.appendChild(h4El);
-
- 
-    // blogContainer.appendChild(blogEl);
-
-
 }

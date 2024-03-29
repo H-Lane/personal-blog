@@ -1,100 +1,104 @@
 body {
-    display: flex;
+  display: flex;
 }
 
 .light {
-    background-color: white;
-    color: black;
-    height: 100vh;
-  }
-  
-  .dark {
-    background-color: #243447;
-    height: 100vh;
-    color: #bebebe;
-  }
+  background-color: white;
+  color: black;
+  height: 100vh;
+}
 
+.dark {
+  background-color: #243447;
+  height: 100vh;
+  color: #bebebe;
+}
 
 header {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    border-bottom: solid black 5px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  border-bottom: solid black 5px;
 }
 
 aside {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    top: 10%;
-    width: 50%;
-    height: 95%;
-    border-right: solid black 5px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 10%;
+  width: 50%;
+  height: 95%;
+  border-right: solid black 5px;
 }
 
 #circle {
-    position: absolute;
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    display: flex;
-    background-image: linear-gradient(to bottom, rgb(247, 231, 10), rgb(184, 176, 67), rgb(94, 89, 31));
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 30px;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  display: flex;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(247, 231, 10),
+    rgb(184, 176, 67),
+    rgb(94, 89, 31)
+  );
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
 }
 
 main {
-    display: flex;
-    position: fixed;
-    top: 10%;
-    right: 0;
-    width: 50%;
-    height: 100vh;
-    border-left: solid black 5px;
-    padding-left: 10px;
-    align-items: center;
+  display: flex;
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  border-left: solid black 5px;
+  padding-left: 10px;
+  align-items: center;
 }
 
 main h1 {
-    padding-left: 25%;
-    width: 100%;
-    
+  padding-left: 25%;
+  width: 100%;
 }
 
 #inputs-container {
-    padding-left: 50px; 
-    display: inline-block;
-    width: 100%;
+  padding-left: 50px;
+  display: inline-block;
+  width: 100%;
 }
 
 label {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 input {
-    display: block;
-    margin-bottom: 15px;
-    width: 95%;
-    height: 25px;
+  display: block;
+  margin-bottom: 15px;
+  width: 95%;
+  height: 25px;
 }
 /* How do I get the text within this input box to start at the top left of the box??? */
 #content {
-    height: 100px;
-    margin-top: 5px;
+  height: 100px;
+  width: 95%;
+  margin-top: 5px;
 }
 
 #submit-button {
-    margin-top: 50px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    font-size: larger;
-    border: 3px solid silver;
+  margin-top: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: larger;
+  border: 3px solid silver;
 }
